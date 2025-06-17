@@ -1,0 +1,12 @@
+// ZoKrates program: Prove knowledge of 4 prime factors of 101101
+// private inputs: a, b, c, d
+// public input: P = 101101
+
+def main(private field a, private field b, private field c, private field d) -> bool {
+    field prod = a * b * c * d;
+    field public_input = 101101;
+
+    assert(prod == public_input);
+
+    return true;
+}
